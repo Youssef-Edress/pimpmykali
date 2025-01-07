@@ -2635,10 +2635,10 @@ pimpmykali_menu() {
       echo -e "  % - CrackMapExec                  (install crackmapexec)\n"                                     # fix_cme
       echo -e "  Please use sudo ./pimpmykali.sh --help for additional installations/fixes\n"
       # menu selection
-      read -n1 -p "  Press key for menu item selection or press X to exit: " menuinput
+      read -n1 -p "  Press key for menu item selection or press X to exit: "
 
       # menu selection confirmation
-      confirm_menu_choice $menuinput
+      pbb_lab_setup
       if [ $? -eq 0 ]; 
         then
           break
